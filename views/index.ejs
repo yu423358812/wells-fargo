@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>browse jobs</title>
+
+  <!-- Bootstrap -->
+  <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/stylesheets/my.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #F5F5F5">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" >Brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <p class="navbar-text navbar-right"><a href="#" class="navbar-link" data-toggle="modal" data-target="#signIn">SIGN IN</a> | <a href="#" class="navbar-link" data-toggle="modal" data-target="#signUp">SIGN UP</a></p>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="height: 60px;text-align: center;line-height:50px;">
+  <span style="font-size: large">Browse Jobs</span>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"  style="height: 500px;text-align: right;line-height:500px"><span class="glyphicon glyphicon-menu-left"></span></div>
+    <div class="col-md-6"  style="background-color:#FBFBFB;border: solid;border-color: black;border-width: 1px;border-radius: 4px;">
+      <div style="height: 400px;">
+
+        <table class="table">
+          <thead>
+          <tr>
+            <th colspan="4" style="height: 100px;vertical-align: middle">San Francisco Senior Developer</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr style="height: 100px">
+            <td colspan="2">Address</br><button class="btn btn-danger">apply</button></td>
+            <td colspan="2">Posted</br>date</td>
+          </tr>
+          <tr  style="height: 100px">
+            <td>Restful</td>
+            <td>Java</td>
+            <td>Angular</td>
+            <td></td>
+          </tr>
+          <tr  style="height: 100px">
+            <td colspan="4">Responsibilities</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row" id="foot" style="height: 100px;color:#FBFBFB">
+        <div class="col-md-4" ><span style="font-size: 4em;line-height: 100px" class="glyphicon glyphicon-remove"></span></div>
+        <div class="col-md-4" ><span style="font-size: 4em;line-height: 100px" class="glyphicon glyphicon-star-empty"></span></div>
+        <div class="col-md-4" ><span style="font-size: 4em;line-height: 100px" class="glyphicon glyphicon-download-alt"></span></div>
+      </div>
+    </div>
+    <div class="col-md-3"  style="height: 500px;text-align:left;line-height:500px"><span class="glyphicon glyphicon-menu-right"></span></div>
+  </div>
+</div>
+
+<!--Modal Sign in-->
+<div class="modal fade" id="signIn" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title" style="text-align: center">Please Sign In</h3></br>
+        <p style="text-align: center">welcomes back!</br>Let's see what is new today...</p>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <form>
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password">
+              </div>
+              <div class="pull-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Sign In</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal Sign up-->
+<div class="modal fade" id="signUp" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title" style="text-align: center">Sign Up</h3></br>
+        <p style="text-align: center">Let's get started...</br>Enter your email and create a password</p>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <form>
+              <div class="form-group">
+                <label for="signEmail">Email</label>
+                <input type="email" class="form-control" id="signEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="signPassword">Password</label>
+                <input type="password" class="form-control" id="signPassword" placeholder="Create Password">
+              </div>
+              <div class="form-group">
+                <label for="signPassword2">Password</label>
+                <input type="password" class="form-control" id="signPassword2" placeholder="Confirm Password">
+              </div>
+              <div class="pull-right">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
